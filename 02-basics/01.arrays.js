@@ -20,4 +20,4 @@ console.log(myn1);
 // splice changes the original array
 const myn2 = arr.splice(1, 3);
 console.log(myn2);
-console.log(arr)
+// console.log(arr)
