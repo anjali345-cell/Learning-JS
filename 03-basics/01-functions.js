@@ -44,20 +44,34 @@
 
 
 // 5. arrays as arguements in functions
-const myNewArray = [200, 4545, 65658, 3523, 400]
+// const myNewArray = [200, 4545, 65658, 3523, 400]
 
-function handleArray(getArray) {
-    return getArray[1];
-}
-console.log(handleArray(myNewArray))
+// function handleArray(getArray) {
+//     return getArray[1];
+// }
+// console.log(handleArray(myNewArray))
 
-// 6. nested function scopes
-function one() {
-    console.log("function one executed");
-    function two() {
-        const website = "website one"
-        console.log(website)
-    }
-    two()
+// // 6. nested function scopes
+// function one() {
+//     console.log("function one executed");
+//     function two() {
+//         const website = "website one"
+//         console.log(website)
+//     }
+//     two()
+// }
+// one()
+
+// 7. function expression (hoisting)
+//1.
+console.log(addTwoNumbers(9))
+function addTwoNumbers(num) {
+    return num + 1
 }
-one()
+
+//2.
+// console.log(addNumbers(4)) <- here it is not accesseble, it depends on the function
+const addNumbers = function addNumbers(num) {
+    return num + 1
+}
+console.log(addNumbers(4))
