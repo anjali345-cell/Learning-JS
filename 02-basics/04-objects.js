@@ -37,4 +37,13 @@ const Obj3 = {5: "a", 6: "b"}
 const Obj5 = {...Obj1, ...Obj2, ...Obj3};
 // console.log(Obj5)
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    coursename: "js full course",
+    price: "1199",
+    courseInstructor: "hitesh coudhary"
+}
+
+const {courseInstructor: instructor} = course
+console.log(instructor)
