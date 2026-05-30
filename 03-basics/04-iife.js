@@ -6,5 +6,9 @@
 
 (function coffee(){
     console.log("db not connected")
-}())
+}());
 
+//arrow function
+( (name) => {
+    console.log(`db not connected ${name}`)
+})('anjalii')
