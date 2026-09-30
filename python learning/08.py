@@ -5,7 +5,7 @@ a = int(input("Enter a number: "))
 try: 
     print(10/a)
 
-except ZeroDivisionError:
-    print("You cannot divide by zero!")
+except Exception as err:
+    print("sorry there is an error in your code: {err}")
 
 print("Program continues after exception handling.")
